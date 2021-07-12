@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サンプル</title>
+</head>
+<body>
+
+<p>サンプルページです。</p>
+
+<input type="button" value="click" id="btn">
+
+<script>
+let count = 5;
+let btn = document.getElementById('btn');
+btn.addEventListener('click', function(){
+    window.setInterval(function(){
+        console.log(count + '秒経過');
+        count += 5;
+    }, 5000);
+});
+</script>
+
+</body>
+</html>
